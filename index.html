@@ -161,7 +161,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 @media (hover: hover) { .logo:hover svg { transform: rotate(-12deg); } }
 .nav { display: none; }
 .nav a { padding: 12px 14px; border-radius: 999px; font-weight: 600; font-size: .9375rem; text-decoration: none; transition: color .15s ease, background-color .15s ease; }
-.nav a:hover { color: var(--red); background: var(--blush); }
+.nav a:hover { color: var(--red); background: var(--red-soft); }
 .header__right { display: flex; align-items: center; gap: 8px; }
 @media (max-width: 379px) { .logo { font-size: .8125rem; gap: 8px; } .logo svg { width: 30px; height: 30px; } .header .btn { padding-inline: 16px; } }
 @media (min-width: 900px) { :root { --header-h: 76px; } .nav { display: flex; gap: 2px; margin-right: 10px; } .logo { font-size: 1.0625rem; } .logo svg { width: 38px; height: 38px; } }
@@ -171,9 +171,9 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .hero__grid { display: grid; gap: 22px; }
 .hero__media { position: relative; }
 .hero__frame { position: relative; overflow: hidden; height: clamp(190px, 28vh, 280px); border-radius: var(--r-lg); background: var(--blush); isolation: isolate; }
-.hero__frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; mix-blend-mode: multiply; }
+.hero__frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; mix-blend-mode: multiply; }
 .hero__chip {
-  position: absolute; right: 12px; bottom: 12px; display: flex; align-items: center; gap: 10px;
+  position: absolute; left: 12px; bottom: 12px; display: flex; align-items: center; gap: 10px;
   padding: 8px 14px 8px 10px; background: var(--white); border-radius: 16px; box-shadow: var(--shadow-md);
   font-size: .75rem; line-height: 1.25; font-weight: 600; color: var(--muted);
 }
@@ -184,6 +184,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .badge { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 6px 13px 6px 10px; background: var(--white); border: 1px solid var(--line); border-radius: 999px; font-size: .8125rem; font-weight: 700; white-space: nowrap; }
 .badge .icon { width: 17px; height: 17px; color: var(--red); }
+@media (max-width: 419px) { .badges { gap: 6px; } .badge { gap: 5px; min-height: 34px; padding: 5px 10px 5px 8px; font-size: .75rem; } .badge .icon { width: 15px; height: 15px; } }
 .hero__actions { display: grid; gap: 10px; margin-top: 22px; }
 .urgency { display: flex; align-items: flex-start; gap: 10px; margin-top: 16px; padding: 12px 16px; background: var(--red-soft); border-radius: var(--r-md); font-size: .9375rem; font-weight: 700; line-height: 1.4; color: var(--red-dark); }
 .pulse { position: relative; flex: none; width: 10px; height: 10px; margin-top: .38em; border-radius: 50%; background: var(--red); }
@@ -195,19 +196,19 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
   .urgency { display: inline-flex; }
   .hero__frame { height: clamp(260px, 38vh, 360px); }
 }
-@media (min-width: 700px) and (max-width: 899px) { .hero h1 { font-size: 2.125rem; } .hero__media .hero__chip { left: -12px; bottom: 40px; } }
+@media (min-width: 700px) and (max-width: 899px) { .hero h1 { font-size: 2.125rem; } .hero__media .hero__chip { left: -12px; bottom: 40px; } .hero .hero__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; } .hero .hero__actions { flex-direction: column; align-items: stretch; max-width: 340px; } }
 @media (min-width: 700px) {
   .hero { padding-top: 40px; }
   .hero__grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); align-items: center; gap: clamp(32px, 5vw, 72px); }
   .hero__media { order: 2; justify-self: center; width: min(100%, 440px); padding: 0 18px 18px 0; }
-  .hero__media::before { content: ""; position: absolute; right: 0; bottom: 0; width: 86%; height: 84%; border-radius: 999px 999px var(--r-xl) var(--r-xl); background: var(--red); }
-  .hero__frame { height: auto; aspect-ratio: 4 / 5; border-radius: 999px 999px var(--r-xl) var(--r-xl); }
+  .hero__media::before { content: ""; position: absolute; right: 0; bottom: 0; width: 86%; height: 84%; border-radius: 50% 50% var(--r-xl) var(--r-xl) / 40% 40% var(--r-xl) var(--r-xl); background: var(--red); }
+  .hero__frame { height: auto; aspect-ratio: 4 / 5; border-radius: 50% 50% var(--r-xl) var(--r-xl) / 40% 40% var(--r-xl) var(--r-xl); }
   .hero__frame img { object-position: 50% 62%; }
-  .hero__chip { right: auto; left: -34px; bottom: 76px; padding: 12px 18px 12px 14px; font-size: .8125rem; }
+  .hero__chip { left: -34px; bottom: 76px; padding: 12px 18px 12px 14px; font-size: .8125rem; }
   .hero__chip strong { font-size: 1.875rem; }
   .hero__bug { display: block; position: absolute; top: 34px; right: 2px; width: 62px; height: 62px; transform: rotate(18deg); filter: drop-shadow(0 8px 12px rgba(43, 29, 26, .2)); animation: bob 5s ease-in-out infinite; }
   .hero .lead { margin-top: 20px; }
-  .badges { margin-top: 26px; }
+  .badges { margin-top: 26px; max-width: 30em; }
   .badge { font-size: .875rem; min-height: 40px; padding: 8px 16px 8px 12px; }
   .hero__actions { margin-top: 32px; gap: 12px; }
   .urgency { margin-top: 22px; }
@@ -229,12 +230,14 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .feature__icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: var(--blush); color: var(--red); }
 .feature__icon .icon { width: 22px; height: 22px; }
 @media (hover: hover) { .feature:hover { transform: translateY(-3px); border-color: transparent; box-shadow: var(--shadow-md); } }
-@media (min-width: 700px) { .features { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; } .feature { padding: 18px 16px; gap: 14px; } }
+@media (min-width: 560px) and (max-width: 899px) { .features { gap: 12px; } .feature { flex-direction: row; align-items: center; gap: 16px; padding: 18px; font-size: .9375rem; } .feature__icon { flex: none; } }
+@media (min-width: 900px) { .features { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; } .feature { padding: 18px 16px; gap: 14px; } }
 @media (min-width: 1040px) { .features { gap: 16px; } .feature { padding: 22px; font-size: .9375rem; } }
 
 .notice { display: flex; gap: 14px; margin-top: clamp(20px, 3vw, 32px); padding: 20px; background: var(--red-soft); border: 1.5px solid rgba(200, 16, 46, .28); border-radius: var(--r-lg); line-height: 1.55; }
 .notice__icon { display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--red); color: var(--white); }
 .notice strong { color: var(--red-dark); font-weight: 800; }
+@media (max-width: 559px) { .notice { gap: 12px; padding: 18px 16px; } .notice__icon { width: 36px; height: 36px; } .notice__icon .icon { width: 20px; height: 20px; } }
 @media (min-width: 700px) { .notice { align-items: center; padding: 24px 28px; gap: 20px; font-size: 1.0625rem; } .notice__icon { width: 52px; height: 52px; } }
 
 /* ---------- Результат и гарантия ---------- */
@@ -265,6 +268,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .admission__list { display: grid; gap: 8px; }
 .admission__list li { display: flex; align-items: center; gap: 12px; padding: 13px 16px; background: var(--white); border: 1px solid var(--line); border-radius: 14px; font-weight: 600; font-size: .9375rem; line-height: 1.4; }
 .admission__list .icon { width: 20px; height: 20px; color: var(--red); stroke-width: 2.4; }
+@media (min-width: 700px) and (max-width: 899px) { .admission__list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 900px) { .admission { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); grid-template-areas: "text list" "note list"; gap: 14px 48px; padding: 44px; } .admission__text { grid-area: text; align-self: end; } .admission__list { grid-area: list; align-self: center; } .admission__note { grid-area: note; align-self: start; } .admission__list li { font-size: 1rem; padding: 14px 18px; } }
 
 /* ---------- Цена ---------- */
@@ -286,7 +290,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .price-card__notes { display: grid; gap: 8px; margin-top: 22px; padding-top: 20px; border-top: 1px dashed var(--line); text-align: left; }
 .price-card__notes li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; font-size: .875rem; line-height: 1.5; color: var(--muted); }
 .price-card__notes .icon { width: 18px; height: 18px; margin-top: 1px; }
-@media (min-width: 700px) { .price-card { padding: 48px 48px 36px; } .timer { flex-direction: row; justify-content: center; gap: 12px; } .timer__label { font-size: .9375rem; } }
+@media (min-width: 700px) { .price-card { padding: 48px 48px 36px; } .price-card__badge { padding: 9px 16px; font-size: 1.25rem; } .timer { flex-direction: row; justify-content: center; gap: 12px; } .timer__label { font-size: .9375rem; } }
 
 /* ---------- Шаги ---------- */
 .steps { display: grid; gap: 14px; counter-reset: step; }
@@ -299,7 +303,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 @media (min-width: 900px) {
   .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
   .step { grid-template-columns: 1fr; align-content: start; gap: 22px; padding: 30px 28px 32px; }
-  .step:not(:last-child)::after { content: ""; position: absolute; top: 56px; left: 96px; right: -20px; border-top: 2px dashed var(--line); }
+  .step:not(:last-child)::after { content: ""; position: absolute; top: 56px; left: 96px; right: 28px; border-top: 2px dashed #DCC5B9; }
   .step__num { position: relative; z-index: 1; }
   .step h3 { font-size: 1.25rem; }
   .step p { font-size: 1rem; }
@@ -320,14 +324,15 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 }
 @media (min-width: 980px) {
   .assess { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 48px; padding: 64px; }
-  .assess__levels { display: grid; grid-template-columns: repeat(3, 76px); gap: 10px; }
-  .assess__levels span { display: grid; place-items: center; height: 76px; border-radius: 22px; border: 1.5px solid rgba(255, 248, 241, .2); font-family: var(--font-head); font-weight: 600; font-size: 1.125rem; color: rgba(255, 248, 241, .45); }
+  .assess__levels { display: grid; grid-template-columns: repeat(6, 58px); gap: 8px; }
+  .assess__levels span { display: grid; place-items: center; height: 58px; border-radius: 18px; border: 1.5px solid rgba(255, 248, 241, .2); font-family: var(--font-head); font-weight: 600; font-size: .9375rem; color: rgba(255, 248, 241, .45); }
   .assess__levels span.is-on { background: var(--red); border-color: var(--red); color: var(--white); box-shadow: var(--shadow-red); }
 }
 
 /* ---------- Обо мне ---------- */
-.about { display: grid; gap: 32px; }
+.about { display: grid; gap: 24px; }
 .about__media { width: 100%; max-width: 460px; }
+@media (max-width: 899px) { .about__content { display: contents; } .about__head { order: -1; } .about__media { margin-inline: auto; } .about .facts, .about .teacher { margin-top: 0; } .about .teacher { margin-top: -10px; } }
 .about__photo { position: relative; border-radius: var(--r-xl); overflow: hidden; background: #F3F1EF; aspect-ratio: 4 / 4.6; box-shadow: var(--shadow-md); }
 .about__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; }
 .gallery { display: flex; gap: 10px; margin-top: 10px; }
@@ -338,16 +343,18 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .fact { padding: 18px 16px; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); }
 .fact strong { display: block; font-family: var(--font-head); font-weight: 700; font-size: clamp(1.625rem, 1.2rem + 2vw, 2.375rem); line-height: 1.1; letter-spacing: -.04em; color: var(--red); white-space: nowrap; }
 .fact strong.is-word { font-size: clamp(1.1875rem, .9rem + 1.3vw, 1.625rem); line-height: 1.5; letter-spacing: -.03em; }
+
+@media (max-width: 379px) { .fact strong { font-size: 1.5rem; } }
 .fact span { display: block; margin-top: 8px; font-size: .875rem; line-height: 1.45; color: var(--muted); font-weight: 500; }
 .teacher { display: grid; grid-template-columns: 56px 1fr; gap: 16px; margin-top: 14px; padding: 20px; background: var(--blush); border-radius: var(--r-lg); }
 .teacher__avatar { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--white); color: var(--red); border: 1.5px dashed rgba(200, 16, 46, .45); }
 .teacher__avatar .icon { width: 28px; height: 28px; }
 .teacher p { margin-top: 6px; font-size: .9375rem; line-height: 1.55; color: var(--muted); }
 @media (min-width: 700px) { .facts { gap: 14px; } .fact { padding: 24px; } .fact span { font-size: .9375rem; } .teacher { padding: 26px; grid-template-columns: 64px 1fr; gap: 20px; } .teacher__avatar { width: 64px; height: 64px; } }
-@media (min-width: 900px) { .about { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(40px, 5vw, 72px); align-items: start; } .about__media { position: sticky; top: calc(var(--header-h) + 24px); } }
+@media (min-width: 900px) { .about { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(40px, 5vw, 72px); align-items: start; } .about__media { max-width: none; } .about__media { position: sticky; top: calc(var(--header-h) + 24px); } }
 
 /* ---------- Отзывы ---------- */
-.reviews { display: flex; gap: 12px; margin-inline: calc(var(--gutter) * -1); padding: 4px var(--gutter) 8px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.reviews { display: flex; align-items: flex-start; gap: 12px; margin-inline: calc(var(--gutter) * -1); padding: 4px var(--gutter) 8px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); -webkit-overflow-scrolling: touch; scrollbar-width: none; }
 .reviews::-webkit-scrollbar { display: none; }
 .review { flex: 0 0 min(86%, 380px); scroll-snap-align: start; display: flex; flex-direction: column; gap: 18px; padding: 22px 20px 24px; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); }
 .review__head { display: flex; align-items: center; gap: 12px; }
@@ -356,7 +363,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .stars { display: flex; gap: 2px; margin-top: 5px; color: var(--gold); }
 .stars svg { width: 16px; height: 16px; }
 .review__overall { margin-left: auto; text-align: right; }
-.review__overall span { display: block; font-size: .6875rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.review__overall span { display: block; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .review__overall strong { display: block; font-family: var(--font-head); font-weight: 700; font-size: 2.5rem; line-height: 1; letter-spacing: -.04em; color: var(--red); }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chips li { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; background: var(--cream); border: 1px solid var(--line); border-radius: 999px; font-size: .8125rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
@@ -368,8 +375,15 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .dots button::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: #DCC5B9; transition: width .25s ease, background-color .25s ease; }
 .dots button[aria-current="true"]::before { width: 22px; background: var(--red); }
 @media (min-width: 700px) {
-  .reviews { display: block; columns: 2; column-gap: 20px; margin-inline: 0; padding: 0; overflow: visible; }
-  .review { break-inside: avoid; margin-bottom: 20px; padding: 30px 30px 32px; }
+  .reviews { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 20px; margin-inline: 0; padding: 0; overflow: visible; }
+  .review { padding: 30px 30px 32px; }
+  .review:nth-child(1) { grid-area: 1 / 1; }
+  .review:nth-child(2) { grid-area: 2 / 1; }
+  .review:nth-child(3) { grid-area: 1 / 2 / span 2; }
+  .review:nth-child(4) { grid-column: 1 / -1; }
+}
+@media (min-width: 900px) {
+  .review:nth-child(3) blockquote { font-size: 1.125rem; line-height: 1.7; }
   .review blockquote { font-size: 1rem; }
   .dots { display: none; }
 }
@@ -385,8 +399,9 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .channel__list li { display: flex; align-items: center; gap: 14px; padding: 12px 0; font-weight: 600; line-height: 1.4; }
 .channel__list li + li { border-top: 1px dashed var(--line); }
 .channel__list .icon { width: 22px; height: 22px; color: var(--red); }
-@media (max-width: 559px) { .channel__text .btn { width: 100%; } }
-@media (min-width: 900px) { .channel { grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: center; gap: 64px; } .channel__card { padding: 30px 32px; transform: rotate(1.5deg); } }
+@media (max-width: 899px) { .channel { gap: 14px; } .channel__text { display: contents; } .channel__card { order: 2; margin-top: 8px; } .channel .channel__text .btn { order: 3; margin-top: 12px; justify-self: start; } }
+@media (max-width: 559px) { .channel .channel__text .btn { width: 100%; } }
+@media (min-width: 900px) { .channel { grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); align-items: center; gap: 48px; } .channel__card { padding: 30px 32px; } }
 
 /* ---------- FAQ ---------- */
 .faq { max-width: 820px; margin-inline: auto; display: grid; gap: 12px; }
@@ -411,16 +426,16 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
 .final h2 { font-size: clamp(1.625rem, 1rem + 3vw, 3rem); max-width: 16em; margin-inline: auto; }
 .final p { margin-top: 16px; font-size: clamp(1rem, .95rem + .4vw, 1.1875rem); font-weight: 600; color: rgba(255, 255, 255, .92); }
 .final .btn { margin-top: 28px; }
-.final__bug { width: 56px; height: 56px; margin: 0 auto 20px; filter: drop-shadow(0 8px 14px rgba(43, 29, 26, .3)); }
-@media (max-width: 559px) { .final .btn { width: 100%; } }
+.final__bug { width: 68px; height: 68px; padding: 9px; margin: 0 auto 22px; background: var(--cream); border-radius: 50%; box-shadow: 0 10px 22px -8px rgba(43, 29, 26, .45); }
+@media (max-width: 559px) { .final { padding-inline: 16px; } .final h2 { font-size: min(1.5rem, 5.5vw); letter-spacing: -.03em; } .final .btn { width: 100%; } }
 @media (min-width: 700px) { .final { padding: 80px 48px; } }
 
 /* ---------- Футер ---------- */
-.footer { padding: 36px 0 88px; border-top: 1px solid var(--line); }
+.footer { padding: 36px 0 40px; border-top: 1px solid var(--line); }
 .footer__row { display: grid; gap: 26px; }
 .footer__links { display: grid; gap: 4px; }
-.footer__links a { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; min-height: 48px; text-decoration: none; color: var(--muted); font-weight: 500; }
-.footer__links a b { color: var(--ink); font-weight: 800; text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
+.footer__links a { display: flex; align-items: center; gap: 12px; min-height: 48px; line-height: 1.5; text-decoration: none; color: var(--muted); font-weight: 500; }
+.footer__links a b { color: var(--ink); font-weight: 800; white-space: nowrap; text-decoration-skip-ink: none; text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
 .footer__links .icon { width: 20px; height: 20px; color: var(--red); }
 .footer__links a:hover b { color: var(--red); }
 .footer__small { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); }
@@ -534,7 +549,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
       <h1>Интенсивная подготовка к&nbsp;<span class="accent">IELTS</span> за&nbsp;1&nbsp;месяц</h1>
       <p class="lead">Интенсивная месячная программа, которая охватывает все части IELTS Academic и&nbsp;готовит вас уверенно сдать экзамен.</p>
       <ul class="badges" aria-label="Коротко о курсе">
-        <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span data-text="dates">1 ноября&nbsp;— 1 декабря</span></li>
+        <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span data-text="dates">1&nbsp;ноября&nbsp;— 1&nbsp;декабря</span></li>
         <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg>Онлайн в Zoom</li>
         <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-level"/></svg>Для уровня B1 и выше</li>
         <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg>Группа до 8 человек</li>
@@ -543,7 +558,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
         <a class="btn btn--primary" data-link="enroll" href="https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link" target="_blank" rel="noopener">Записаться на курс</a>
         <a class="btn btn--outline" data-link="assess" href="https://t.me/trinit_02?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83%20%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%BC%20IELTS." target="_blank" rel="noopener">Бесплатная диагностика уровня</a>
       </div>
-      <p class="urgency"><span class="pulse" aria-hidden="true"></span><span><span data-early-only>Скидка 30% до&nbsp;20&nbsp;октября · </span><span data-text="seats">Осталось всего 3 места</span></span></p>
+      <p class="urgency"><span class="pulse" aria-hidden="true"></span><span><span data-early-only>Скидка 30% до&nbsp;20&nbsp;октября · </span><span class="nowrap" data-text="seats">Осталось всего 3 места</span></span></p>
     </div>
   </div>
 </section>
@@ -584,7 +599,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
     </div>
     <ul class="features">
       <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>Живые занятия в&nbsp;Zoom 4&nbsp;раза в&nbsp;неделю по&nbsp;1&nbsp;часу</li>
-      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span><span>Длительность курса&nbsp;— 1&nbsp;месяц (<span data-text="dates">1 ноября&nbsp;— 1 декабря</span>)</span></li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span><span>Длительность курса&nbsp;— 1&nbsp;месяц (<span data-text="dates">1&nbsp;ноября&nbsp;— 1&nbsp;декабря</span>)</span></li>
       <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><span>Маленькая группа: <span class="nowrap">7–8&nbsp;человек</span></span></li>
       <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg></span>Подробная подготовка ко&nbsp;всем четырём частям IELTS: Listening, Reading, Writing, Speaking</li>
       <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></span>Разбор и&nbsp;практика всех типов заданий, которые встречаются на&nbsp;экзамене</li>
@@ -740,7 +755,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
     </div>
 
     <div class="about__content">
-      <div data-reveal>
+      <div class="about__head" data-reveal>
         <h2 class="h2">Обо мне</h2>
         <p class="lead about__intro">Меня зовут Лия. Я&nbsp;готовлю студентов к&nbsp;экзаменам по&nbsp;английскому больше 4&nbsp;лет.</p>
       </div>
@@ -769,7 +784,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
       <p class="small">Отзывы студентов с&nbsp;индивидуальных занятий. Публикуются с&nbsp;их&nbsp;согласия.</p>
     </div>
 
-    <div class="reviews" data-carousel tabindex="0" role="group" aria-label="Отзывы студентов">
+    <div class="reviews" data-carousel role="group" aria-label="Отзывы студентов">
       <article class="review">
         <header class="review__head">
           <span class="avatar" aria-hidden="true">М</span>
@@ -899,11 +914,11 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16;
         <span>English <b>with</b> Liia</span>
       </a>
       <div class="footer__links">
-        <a data-link="personal" href="https://t.me/trinit_02" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>Связаться со мной: <b>Telegram <span data-text="tgHandle">@trinit_02</span></b></a>
-        <a data-link="channel" href="https://t.me/englishwithliia" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Telegram-канал: <b data-text="channelShort">t.me/englishwithliia</b></a>
+        <a data-link="personal" href="https://t.me/trinit_02" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg><span>Связаться со мной: <b>Telegram <span data-text="tgHandle">@trinit_02</span></b></span></a>
+        <a data-link="channel" href="https://t.me/englishwithliia" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>Telegram-канал: <b data-text="channelShort">t.me/englishwithliia</b></span></a>
       </div>
     </div>
-    <p class="small footer__small">Отвечаю в&nbsp;течение 24&nbsp;часов. · © 2026 English with Liia</p>
+    <p class="small footer__small">Отвечаю в&nbsp;течение 24&nbsp;часов. · <span class="nowrap">© 2026 English with Liia</span></p>
   </div>
 </footer>
 
@@ -956,7 +971,7 @@ const CONFIG = {
     discount: "−" + Math.round((1 - CONFIG.priceEarly / CONFIG.priceFull) * 100) + "%",
     deposit: CONFIG.depositPercent + "%",
     seats: CONFIG.seatsLeftText,
-    dates: CONFIG.courseDates.replace(/ —/g, " —"),
+    dates: CONFIG.courseDates.replace(/ —/g, "\u00A0—").replace(/(\d) /g, "$1\u00A0"),
     tgHandle: "@" + CONFIG.telegramPersonal,
     channelShort: CONFIG.telegramChannelUrl.replace(/^https?:\/\//, "")
   };
@@ -992,10 +1007,12 @@ const CONFIG = {
 
   /* --- «Скопировать сообщение» --- */
   function copyText(text) {
+    // сначала способ, который работает и во встроенных браузерах мессенджеров
+    if (legacyCopy(text)) return Promise.resolve(true);
     if (navigator.clipboard && window.isSecureContext) {
-      return navigator.clipboard.writeText(text).then(() => true, () => legacyCopy(text));
+      return navigator.clipboard.writeText(text).then(() => true, () => false);
     }
-    return Promise.resolve(legacyCopy(text));
+    return Promise.resolve(false);
   }
   function legacyCopy(text) {
     const area = document.createElement("textarea");
@@ -1055,7 +1072,13 @@ const CONFIG = {
   const sticky = document.querySelector("[data-sticky]");
   if (sticky && hasIO) {
     const state = { hero: true, footer: false };
-    const update = () => sticky.classList.toggle("is-visible", !state.hero && !state.footer);
+    const inPage = new Set();
+    const update = () => sticky.classList.toggle("is-visible", !state.hero && !state.footer && inPage.size === 0);
+    const ctaObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => { if (entry.isIntersecting) inPage.add(entry.target); else inPage.delete(entry.target); });
+      update();
+    });
+    $$("main [data-link='enroll']").forEach((btn) => { if (!btn.closest("#hero")) ctaObserver.observe(btn); });
     new IntersectionObserver((entries) => { state.hero = entries[0].isIntersecting; update(); })
       .observe(document.getElementById("hero"));
     new IntersectionObserver((entries) => { state.footer = entries[0].isIntersecting; update(); })
@@ -1098,6 +1121,8 @@ const CONFIG = {
       const index = max <= 0 ? 0 : Math.round((track.scrollLeft / max) * (slides.length - 1));
       dots.forEach((dot, i) => dot.setAttribute("aria-current", i === index ? "true" : "false"));
     };
+    // фокус с клавиатуры нужен только там, где лента действительно прокручивается
+    if (track.scrollWidth > track.clientWidth + 1) track.tabIndex = 0;
     track.addEventListener("scroll", setActive, { passive: true });
     setActive();
   });
