@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Интенсивная подготовка к IELTS за 1 месяц — English with Liia</title>
+<meta name="description" content="Интенсивная месячная программа, которая охватывает все части IELTS Academic и готовит вас уверенно сдать экзамен.">
+<meta name="theme-color" content="#FFF8F1">
+
+<!-- Open Graph. После публикации замените og:image и og:url на полные адреса (https://ваш-домен/…): Telegram не показывает превью по относительной ссылке. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="English with Liia">
+<meta property="og:title" content="Интенсивная подготовка к IELTS за 1 месяц">
+<meta property="og:description" content="Интенсивная месячная программа, которая охватывает все части IELTS Academic и готовит вас уверенно сдать экзамен.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/unbounded-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/unbounded-latin.woff2" crossorigin>
+
+<script>document.documentElement.classList.add('js');</script>
+
+<style>
+/* ---------- Шрифты (лежат в assets/fonts, лицензия OFL) ---------- */
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 800; font-display: swap; src: url("assets/fonts/manrope-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 400 800; font-display: swap; src: url("assets/fonts/manrope-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Unbounded"; font-style: normal; font-weight: 500 700; font-display: swap; src: url("assets/fonts/unbounded-cyrillic.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Unbounded"; font-style: normal; font-weight: 500 700; font-display: swap; src: url("assets/fonts/unbounded-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* Запасной шрифт той же ширины, что Unbounded: страница не «прыгает», пока грузится основной */
+@font-face { font-family: "Unbounded Fallback"; src: local("Arial Bold"), local("Arial"), local("Roboto"), local("Helvetica Neue"); size-adjust: 128%; ascent-override: 92%; descent-override: 24%; line-gap-override: 0%; }
+
+/* ---------- Основа ---------- */
+:root {
+  --red: #C8102E;
+  --red-dark: #A50D26;
+  --red-soft: #FBE4E1;
+  --cream: #FFF8F1;
+  --blush: #F7E9E1;
+  --ink: #2B1D1A;
+  --muted: #6F5A53;
+  --line: #EBD9CF;
+  --white: #FFFFFF;
+  --gold: #E0A019;
+
+  --r-xl: 32px;
+  --r-lg: 24px;
+  --r-md: 18px;
+  --r-sm: 12px;
+
+  --shadow-sm: 0 1px 2px rgba(43, 29, 26, .05), 0 8px 20px -12px rgba(43, 29, 26, .16);
+  --shadow-md: 0 2px 4px rgba(43, 29, 26, .04), 0 22px 44px -22px rgba(43, 29, 26, .26);
+  --shadow-red: 0 12px 26px -12px rgba(200, 16, 46, .65);
+
+  --font-head: "Unbounded", "Unbounded Fallback", "Manrope", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --gutter: clamp(16px, 4.4vw, 32px);
+  --section: clamp(60px, 9vw, 116px);
+  --header-h: 64px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 16px); }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img, svg { display: block; max-width: 100%; }
+h1, h2, h3, p, ul, ol, figure, blockquote { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--red); outline-offset: 3px; border-radius: 6px; }
+.on-dark :focus-visible, .on-red :focus-visible { outline-color: var(--white); }
+
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.skip-link { position: absolute; left: 16px; top: -80px; z-index: 100; background: var(--ink); color: var(--cream); padding: 12px 18px; border-radius: 12px; }
+.skip-link:focus { top: 12px; }
+
+.container { width: 100%; max-width: 1160px; margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: var(--section); }
+.section--blush { background: var(--blush); }
+
+h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.16; letter-spacing: -.015em; text-wrap: balance; }
+.h2 { font-size: clamp(1.5rem, 1rem + 2.3vw, 2.5rem); }
+.h3 { font-size: clamp(1.125rem, 1rem + .6vw, 1.375rem); line-height: 1.3; }
+.lead { font-size: clamp(1.0625rem, 1rem + .4vw, 1.25rem); line-height: 1.55; color: var(--muted); text-wrap: pretty; }
+.small { font-size: .875rem; line-height: 1.5; color: var(--muted); }
+.section-head { max-width: 760px; margin-bottom: clamp(28px, 4.5vw, 48px); }
+.section-head > * + * { margin-top: 14px; }
+.section-head--center { margin-inline: auto; text-align: center; }
+.accent { color: var(--red); }
+.nowrap { white-space: nowrap; }
+.phrase { display: inline-block; }
+
+/* ---------- Кнопки ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 54px; padding: 12px 28px;
+  border: 1.5px solid transparent; border-radius: 999px;
+  font-weight: 700; font-size: 1rem; line-height: 1.2; text-align: center; text-decoration: none;
+  transition: transform .18s ease, background-color .18s ease, color .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.btn .icon { width: 20px; height: 20px; }
+.btn:active { transform: translateY(1px); }
+.btn--primary { background: var(--red); color: var(--white); box-shadow: var(--shadow-red); }
+.btn--outline { border-color: var(--ink); color: var(--ink); }
+.btn--white { background: var(--white); color: var(--red-dark); box-shadow: 0 14px 28px -14px rgba(43, 29, 26, .55); }
+.btn--cream { background: var(--cream); color: var(--ink); }
+.btn--sm { min-height: 48px; padding: 8px 20px; font-size: .9375rem; }
+.btn--block { width: 100%; }
+@media (max-width: 559px) { .btn { padding-inline: 18px; } }
+@media (max-width: 379px) { .btn { padding-inline: 14px; font-size: .9375rem; } }
+@media (hover: hover) {
+  .btn--primary:hover { background: var(--red-dark); transform: translateY(-2px); }
+  .btn--outline:hover { background: var(--ink); color: var(--cream); }
+  .btn--white:hover, .btn--cream:hover { transform: translateY(-2px); }
+}
+
+.copy-link {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 6px;
+  font-size: .875rem; font-weight: 600; color: var(--muted);
+  text-decoration: underline; text-decoration-color: currentColor; text-underline-offset: 4px; text-decoration-thickness: 1px;
+}
+.copy-link .icon { width: 18px; height: 18px; }
+.copy-link.is-done { color: var(--red); text-decoration: none; }
+.on-dark .copy-link { color: rgba(255, 248, 241, .78); }
+.on-dark .copy-link.is-done { color: var(--white); }
+
+/* ---------- Шапка ---------- */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255, 248, 241, .88);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px); backdrop-filter: saturate(1.4) blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.header.is-stuck { border-color: var(--line); box-shadow: 0 10px 30px -24px rgba(43, 29, 26, .5); }
+.header__row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--header-h); }
+.logo { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; text-decoration: none; font-family: var(--font-head); font-weight: 600; font-size: .9375rem; letter-spacing: -.02em; white-space: nowrap; }
+.logo svg { width: 34px; height: 34px; flex: none; transition: transform .3s ease; }
+.logo b { font-weight: 600; color: var(--red); }
+@media (hover: hover) { .logo:hover svg { transform: rotate(-12deg); } }
+.nav { display: none; }
+.nav a { padding: 12px 14px; border-radius: 999px; font-weight: 600; font-size: .9375rem; text-decoration: none; transition: color .15s ease, background-color .15s ease; }
+.nav a:hover { color: var(--red); background: var(--blush); }
+.header__right { display: flex; align-items: center; gap: 8px; }
+@media (max-width: 379px) { .logo { font-size: .8125rem; gap: 8px; } .logo svg { width: 30px; height: 30px; } .header .btn { padding-inline: 16px; } }
+@media (min-width: 900px) { :root { --header-h: 76px; } .nav { display: flex; gap: 2px; margin-right: 10px; } .logo { font-size: 1.0625rem; } .logo svg { width: 38px; height: 38px; } }
+
+/* ---------- Первый экран ---------- */
+.hero { position: relative; padding-block: 16px clamp(44px, 7vw, 88px); overflow: hidden; }
+.hero__grid { display: grid; gap: 22px; }
+.hero__media { position: relative; }
+.hero__frame { position: relative; overflow: hidden; height: clamp(190px, 28vh, 280px); border-radius: var(--r-lg); background: var(--blush); isolation: isolate; }
+.hero__frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; mix-blend-mode: multiply; }
+.hero__chip {
+  position: absolute; right: 12px; bottom: 12px; display: flex; align-items: center; gap: 10px;
+  padding: 8px 14px 8px 10px; background: var(--white); border-radius: 16px; box-shadow: var(--shadow-md);
+  font-size: .75rem; line-height: 1.25; font-weight: 600; color: var(--muted);
+}
+.hero__chip strong { font-family: var(--font-head); font-weight: 700; font-size: 1.375rem; color: var(--red); letter-spacing: -.03em; }
+.hero__bug { display: none; }
+.hero h1 { font-size: clamp(1.75rem, 1rem + 3.5vw, 3.25rem); }
+.hero .lead { margin-top: 14px; max-width: 34em; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.badge { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 6px 13px 6px 10px; background: var(--white); border: 1px solid var(--line); border-radius: 999px; font-size: .8125rem; font-weight: 700; white-space: nowrap; }
+.badge .icon { width: 17px; height: 17px; color: var(--red); }
+.hero__actions { display: grid; gap: 10px; margin-top: 22px; }
+.urgency { display: flex; align-items: flex-start; gap: 10px; margin-top: 16px; padding: 12px 16px; background: var(--red-soft); border-radius: var(--r-md); font-size: .9375rem; font-weight: 700; line-height: 1.4; color: var(--red-dark); }
+.pulse { position: relative; flex: none; width: 10px; height: 10px; margin-top: .38em; border-radius: 50%; background: var(--red); }
+.pulse::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--red); animation: pulse 1.8s ease-out infinite; }
+@keyframes pulse { from { transform: scale(1); opacity: .6; } to { transform: scale(3); opacity: 0; } }
+
+@media (min-width: 560px) {
+  .hero__actions { display: flex; flex-wrap: wrap; }
+  .urgency { display: inline-flex; }
+  .hero__frame { height: clamp(260px, 38vh, 360px); }
+}
+@media (min-width: 700px) and (max-width: 899px) { .hero h1 { font-size: 2.125rem; } .hero__media .hero__chip { left: -12px; bottom: 40px; } }
+@media (min-width: 700px) {
+  .hero { padding-top: 40px; }
+  .hero__grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); align-items: center; gap: clamp(32px, 5vw, 72px); }
+  .hero__media { order: 2; justify-self: center; width: min(100%, 440px); padding: 0 18px 18px 0; }
+  .hero__media::before { content: ""; position: absolute; right: 0; bottom: 0; width: 86%; height: 84%; border-radius: 999px 999px var(--r-xl) var(--r-xl); background: var(--red); }
+  .hero__frame { height: auto; aspect-ratio: 4 / 5; border-radius: 999px 999px var(--r-xl) var(--r-xl); }
+  .hero__frame img { object-position: 50% 62%; }
+  .hero__chip { right: auto; left: -34px; bottom: 76px; padding: 12px 18px 12px 14px; font-size: .8125rem; }
+  .hero__chip strong { font-size: 1.875rem; }
+  .hero__bug { display: block; position: absolute; top: 34px; right: 2px; width: 62px; height: 62px; transform: rotate(18deg); filter: drop-shadow(0 8px 12px rgba(43, 29, 26, .2)); animation: bob 5s ease-in-out infinite; }
+  .hero .lead { margin-top: 20px; }
+  .badges { margin-top: 26px; }
+  .badge { font-size: .875rem; min-height: 40px; padding: 8px 16px 8px 12px; }
+  .hero__actions { margin-top: 32px; gap: 12px; }
+  .urgency { margin-top: 22px; }
+}
+@keyframes bob { 0%, 100% { transform: rotate(18deg) translateY(0); } 50% { transform: rotate(12deg) translateY(-8px); } }
+
+/* ---------- Зачем IELTS ---------- */
+.why-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.why-card { display: flex; flex-direction: column; gap: 18px; padding: 18px; background: var(--white); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); }
+.why-card__icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: var(--red-soft); color: var(--red); }
+.why-card__icon .icon { width: 26px; height: 26px; }
+.why-card h3 { font-family: var(--font-body); font-size: 1.0625rem; font-weight: 800; letter-spacing: 0; line-height: 1.3; }
+.why-note { margin-top: 20px; }
+@media (min-width: 900px) { .why-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; } .why-card { padding: 26px; gap: 28px; } .why-card h3 { font-size: 1.1875rem; } }
+
+/* ---------- Что входит ---------- */
+.features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.feature { display: flex; flex-direction: column; gap: 12px; padding: 16px 14px; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); font-size: .875rem; line-height: 1.42; font-weight: 600; -webkit-hyphens: auto; hyphens: auto; overflow-wrap: break-word; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.feature__icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: var(--blush); color: var(--red); }
+.feature__icon .icon { width: 22px; height: 22px; }
+@media (hover: hover) { .feature:hover { transform: translateY(-3px); border-color: transparent; box-shadow: var(--shadow-md); } }
+@media (min-width: 700px) { .features { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; } .feature { padding: 18px 16px; gap: 14px; } }
+@media (min-width: 1040px) { .features { gap: 16px; } .feature { padding: 22px; font-size: .9375rem; } }
+
+.notice { display: flex; gap: 14px; margin-top: clamp(20px, 3vw, 32px); padding: 20px; background: var(--red-soft); border: 1.5px solid rgba(200, 16, 46, .28); border-radius: var(--r-lg); line-height: 1.55; }
+.notice__icon { display: grid; place-items: center; flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--red); color: var(--white); }
+.notice strong { color: var(--red-dark); font-weight: 800; }
+@media (min-width: 700px) { .notice { align-items: center; padding: 24px 28px; gap: 20px; font-size: 1.0625rem; } .notice__icon { width: 52px; height: 52px; } }
+
+/* ---------- Результат и гарантия ---------- */
+.result-goal { font-weight: 500; }
+.result-goal b { color: var(--red); font-weight: 800; white-space: nowrap; }
+.guarantee { display: grid; border-radius: var(--r-xl); overflow: hidden; background: var(--white); border: 2px solid var(--red); box-shadow: 0 30px 60px -34px rgba(200, 16, 46, .55); }
+.guarantee__main { position: relative; overflow: hidden; padding: 28px 22px 30px; background: linear-gradient(150deg, #D41437 0%, var(--red) 45%, var(--red-dark) 100%); color: var(--white); isolation: isolate; }
+.guarantee__main::after { content: ""; position: absolute; z-index: -1; right: -70px; bottom: -90px; width: 260px; height: 260px; border-radius: 50%; border: 44px solid rgba(255, 255, 255, .08); }
+.guarantee__icon { display: grid; place-items: center; width: 60px; height: 60px; margin-bottom: 20px; border-radius: 20px; background: var(--white); color: var(--red); }
+.guarantee__icon .icon { width: 32px; height: 32px; stroke-width: 2; }
+.guarantee__main h3 { font-size: clamp(1.375rem, 1.1rem + 1.3vw, 1.875rem); }
+.guarantee__main p { margin-top: 14px; font-size: clamp(1.0625rem, 1rem + .35vw, 1.1875rem); line-height: 1.55; font-weight: 500; }
+.guarantee__main p b { font-weight: 800; white-space: nowrap; }
+.guarantee__terms { padding: 26px 22px 28px; }
+.guarantee__terms h4 { margin: 0 0 14px; font-size: .8125rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+.checklist { display: grid; gap: 12px; }
+.checklist li { display: grid; grid-template-columns: 24px 1fr; gap: 12px; font-size: .9375rem; line-height: 1.5; }
+.checklist .icon { width: 24px; height: 24px; padding: 4px; border-radius: 50%; background: var(--red-soft); color: var(--red); stroke-width: 2.6; }
+@media (min-width: 900px) {
+  .guarantee { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); }
+  .guarantee__main { padding: 44px 40px; display: flex; flex-direction: column; justify-content: center; }
+  .guarantee__terms { padding: 40px 40px 42px; }
+  .checklist li { font-size: 1rem; }
+}
+
+.admission { display: grid; gap: 22px; margin-top: clamp(40px, 6vw, 72px); padding: 26px 22px; background: var(--cream); border-radius: var(--r-xl); }
+.admission__text > * + * { margin-top: 12px; }
+.admission__list { display: grid; gap: 8px; }
+.admission__list li { display: flex; align-items: center; gap: 12px; padding: 13px 16px; background: var(--white); border: 1px solid var(--line); border-radius: 14px; font-weight: 600; font-size: .9375rem; line-height: 1.4; }
+.admission__list .icon { width: 20px; height: 20px; color: var(--red); stroke-width: 2.4; }
+@media (min-width: 900px) { .admission { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); grid-template-areas: "text list" "note list"; gap: 14px 48px; padding: 44px; } .admission__text { grid-area: text; align-self: end; } .admission__list { grid-area: list; align-self: center; } .admission__note { grid-area: note; align-self: start; } .admission__list li { font-size: 1rem; padding: 14px 18px; } }
+
+/* ---------- Цена ---------- */
+.pricing { position: relative; overflow: hidden; isolation: isolate; }
+.pricing::before, .pricing::after { content: ""; position: absolute; z-index: -1; border-radius: 50%; }
+.pricing::before { width: 520px; height: 520px; left: -220px; top: -160px; background: radial-gradient(closest-side, rgba(200, 16, 46, .13), transparent); }
+.pricing::after { width: 620px; height: 620px; right: -260px; bottom: -240px; background: radial-gradient(closest-side, rgba(200, 16, 46, .11), transparent); }
+.price-card { position: relative; max-width: 560px; margin-inline: auto; padding: 34px 22px 26px; background: var(--white); border: 2px solid var(--red); border-radius: var(--r-xl); text-align: center; box-shadow: 0 40px 80px -40px rgba(200, 16, 46, .6), 0 2px 6px rgba(43, 29, 26, .05); }
+.price-card__old { font-family: var(--font-head); font-weight: 500; font-size: 1.5rem; color: var(--muted); text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: 2px; }
+.price-card__row { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 2px; }
+.price-card__now { font-family: var(--font-head); font-weight: 700; font-size: clamp(4.25rem, 3rem + 7vw, 6.5rem); line-height: 1; letter-spacing: -.05em; color: var(--red); }
+.price-card__badge { padding: 7px 13px; background: var(--ink); color: var(--cream); border-radius: 999px; font-family: var(--font-head); font-weight: 600; font-size: 1rem; white-space: nowrap; transform: rotate(-6deg); }
+.price-card__text { max-width: 26em; margin: 18px auto 0; font-weight: 600; line-height: 1.5; text-wrap: balance; }
+.timer { display: flex; flex-direction: column; align-items: center; gap: 2px; margin-top: 20px; padding: 14px 18px; background: var(--ink); color: var(--cream); border-radius: var(--r-md); }
+.timer__label { font-size: .8125rem; font-weight: 600; letter-spacing: .04em; opacity: .8; }
+.timer__value { font-family: var(--font-head); font-weight: 600; font-size: clamp(1.25rem, 1rem + 1.6vw, 1.625rem); font-variant-numeric: tabular-nums; letter-spacing: 0; white-space: nowrap; }
+.seats { display: inline-flex; align-items: flex-start; gap: 10px; margin-top: 18px; font-weight: 800; color: var(--red-dark); }
+.price-card .btn { margin-top: 20px; }
+.price-card__notes { display: grid; gap: 8px; margin-top: 22px; padding-top: 20px; border-top: 1px dashed var(--line); text-align: left; }
+.price-card__notes li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; font-size: .875rem; line-height: 1.5; color: var(--muted); }
+.price-card__notes .icon { width: 18px; height: 18px; margin-top: 1px; }
+@media (min-width: 700px) { .price-card { padding: 48px 48px 36px; } .timer { flex-direction: row; justify-content: center; gap: 12px; } .timer__label { font-size: .9375rem; } }
+
+/* ---------- Шаги ---------- */
+.steps { display: grid; gap: 14px; counter-reset: step; }
+.step { position: relative; display: grid; grid-template-columns: 52px 1fr; gap: 16px; padding: 20px; background: var(--white); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); }
+.step__num { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: var(--red); color: var(--white); font-family: var(--font-head); font-weight: 600; font-size: 1.25rem; }
+.step h3 { font-family: var(--font-body); font-weight: 800; font-size: 1.125rem; letter-spacing: 0; line-height: 1.3; }
+.step p { margin-top: 6px; color: var(--muted); font-size: .9375rem; line-height: 1.55; }
+.steps-cta { margin-top: clamp(24px, 4vw, 40px); text-align: center; }
+@media (max-width: 559px) { .steps-cta .btn { width: 100%; } }
+@media (min-width: 900px) {
+  .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .step { grid-template-columns: 1fr; align-content: start; gap: 22px; padding: 30px 28px 32px; }
+  .step:not(:last-child)::after { content: ""; position: absolute; top: 56px; left: 96px; right: -20px; border-top: 2px dashed var(--line); }
+  .step__num { position: relative; z-index: 1; }
+  .step h3 { font-size: 1.25rem; }
+  .step p { font-size: 1rem; }
+}
+
+/* ---------- Диагностика ---------- */
+.assess { position: relative; overflow: hidden; isolation: isolate; padding: 36px 22px; background: var(--ink); color: var(--cream); border-radius: var(--r-xl); }
+.assess::before { content: ""; position: absolute; z-index: -1; right: -120px; top: -120px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(closest-side, rgba(200, 16, 46, .55), transparent); }
+.assess::after { content: ""; position: absolute; z-index: -1; left: -60px; bottom: -110px; width: 240px; height: 240px; border-radius: 50%; border: 36px solid rgba(255, 248, 241, .05); }
+.assess__text { max-width: 640px; }
+.assess p { margin-top: 16px; color: rgba(255, 248, 241, .82); font-size: clamp(1rem, .95rem + .3vw, 1.125rem); line-height: 1.6; }
+.assess__actions { display: flex; flex-direction: column; align-items: stretch; gap: 6px; margin-top: 26px; }
+.assess__actions .copy-link { justify-content: center; }
+.assess__levels { display: none; }
+@media (min-width: 700px) {
+  .assess { padding: 56px; }
+  .assess__actions { flex-direction: row; align-items: center; gap: 18px; }
+}
+@media (min-width: 980px) {
+  .assess { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 48px; padding: 64px; }
+  .assess__levels { display: grid; grid-template-columns: repeat(3, 76px); gap: 10px; }
+  .assess__levels span { display: grid; place-items: center; height: 76px; border-radius: 22px; border: 1.5px solid rgba(255, 248, 241, .2); font-family: var(--font-head); font-weight: 600; font-size: 1.125rem; color: rgba(255, 248, 241, .45); }
+  .assess__levels span.is-on { background: var(--red); border-color: var(--red); color: var(--white); box-shadow: var(--shadow-red); }
+}
+
+/* ---------- Обо мне ---------- */
+.about { display: grid; gap: 32px; }
+.about__media { width: 100%; max-width: 460px; }
+.about__photo { position: relative; border-radius: var(--r-xl); overflow: hidden; background: #F3F1EF; aspect-ratio: 4 / 4.6; box-shadow: var(--shadow-md); }
+.about__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 100%; }
+.gallery { display: flex; gap: 10px; margin-top: 10px; }
+.gallery figure { flex: 1 1 0; min-width: 0; aspect-ratio: 1; border-radius: var(--r-md); overflow: hidden; background: var(--blush); }
+.gallery img { width: 100%; height: 100%; object-fit: cover; }
+.about__intro { margin-top: 14px; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 26px; }
+.fact { padding: 18px 16px; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); }
+.fact strong { display: block; font-family: var(--font-head); font-weight: 700; font-size: clamp(1.625rem, 1.2rem + 2vw, 2.375rem); line-height: 1.1; letter-spacing: -.04em; color: var(--red); white-space: nowrap; }
+.fact strong.is-word { font-size: clamp(1.1875rem, .9rem + 1.3vw, 1.625rem); line-height: 1.5; letter-spacing: -.03em; }
+.fact span { display: block; margin-top: 8px; font-size: .875rem; line-height: 1.45; color: var(--muted); font-weight: 500; }
+.teacher { display: grid; grid-template-columns: 56px 1fr; gap: 16px; margin-top: 14px; padding: 20px; background: var(--blush); border-radius: var(--r-lg); }
+.teacher__avatar { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--white); color: var(--red); border: 1.5px dashed rgba(200, 16, 46, .45); }
+.teacher__avatar .icon { width: 28px; height: 28px; }
+.teacher p { margin-top: 6px; font-size: .9375rem; line-height: 1.55; color: var(--muted); }
+@media (min-width: 700px) { .facts { gap: 14px; } .fact { padding: 24px; } .fact span { font-size: .9375rem; } .teacher { padding: 26px; grid-template-columns: 64px 1fr; gap: 20px; } .teacher__avatar { width: 64px; height: 64px; } }
+@media (min-width: 900px) { .about { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(40px, 5vw, 72px); align-items: start; } .about__media { position: sticky; top: calc(var(--header-h) + 24px); } }
+
+/* ---------- Отзывы ---------- */
+.reviews { display: flex; gap: 12px; margin-inline: calc(var(--gutter) * -1); padding: 4px var(--gutter) 8px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.reviews::-webkit-scrollbar { display: none; }
+.review { flex: 0 0 min(86%, 380px); scroll-snap-align: start; display: flex; flex-direction: column; gap: 18px; padding: 22px 20px 24px; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); }
+.review__head { display: flex; align-items: center; gap: 12px; }
+.avatar { display: grid; place-items: center; flex: none; width: 48px; height: 48px; border-radius: 50%; background: var(--blush); font-family: var(--font-head); font-weight: 600; font-size: 1.125rem; color: var(--ink); }
+.review__name { font-weight: 800; line-height: 1.2; }
+.stars { display: flex; gap: 2px; margin-top: 5px; color: var(--gold); }
+.stars svg { width: 16px; height: 16px; }
+.review__overall { margin-left: auto; text-align: right; }
+.review__overall span { display: block; font-size: .6875rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.review__overall strong { display: block; font-family: var(--font-head); font-weight: 700; font-size: 2.5rem; line-height: 1; letter-spacing: -.04em; color: var(--red); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips li { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; background: var(--cream); border: 1px solid var(--line); border-radius: 999px; font-size: .8125rem; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.chips b { color: var(--ink); font-weight: 800; }
+.review blockquote { position: relative; padding-top: 34px; border-top: 1px solid var(--line); margin-top: 2px; font-size: .9375rem; line-height: 1.62; }
+.review blockquote svg { position: absolute; top: 12px; left: -2px; width: 26px; height: 26px; color: #EBC9BC; }
+.dots { display: flex; justify-content: center; gap: 2px; margin-top: 6px; }
+.dots button { display: grid; place-items: center; width: 28px; height: 28px; }
+.dots button::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: #DCC5B9; transition: width .25s ease, background-color .25s ease; }
+.dots button[aria-current="true"]::before { width: 22px; background: var(--red); }
+@media (min-width: 700px) {
+  .reviews { display: block; columns: 2; column-gap: 20px; margin-inline: 0; padding: 0; overflow: visible; }
+  .review { break-inside: avoid; margin-bottom: 20px; padding: 30px 30px 32px; }
+  .review blockquote { font-size: 1rem; }
+  .dots { display: none; }
+}
+
+/* ---------- Telegram-канал ---------- */
+.channel { display: grid; gap: 28px; }
+.channel__text > * + * { margin-top: 14px; }
+.channel__text .btn { margin-top: 26px; }
+.channel__card { position: relative; padding: 22px 20px; background: var(--white); border-radius: var(--r-xl); box-shadow: var(--shadow-md); }
+.channel__handle { display: flex; align-items: center; gap: 12px; padding-bottom: 16px; margin-bottom: 8px; border-bottom: 1px solid var(--line); font-weight: 800; }
+.channel__handle svg { width: 44px; height: 44px; padding: 6px; border-radius: 50%; background: var(--blush); }
+.channel__handle small { display: block; font-size: .8125rem; font-weight: 600; color: var(--muted); }
+.channel__list li { display: flex; align-items: center; gap: 14px; padding: 12px 0; font-weight: 600; line-height: 1.4; }
+.channel__list li + li { border-top: 1px dashed var(--line); }
+.channel__list .icon { width: 22px; height: 22px; color: var(--red); }
+@media (max-width: 559px) { .channel__text .btn { width: 100%; } }
+@media (min-width: 900px) { .channel { grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: center; gap: 64px; } .channel__card { padding: 30px 32px; transform: rotate(1.5deg); } }
+
+/* ---------- FAQ ---------- */
+.faq { max-width: 820px; margin-inline: auto; display: grid; gap: 12px; }
+.faq details { background: var(--white); border: 1px solid var(--line); border-radius: var(--r-lg); transition: border-color .2s ease, box-shadow .2s ease; }
+.faq details[open] { border-color: rgba(200, 16, 46, .4); box-shadow: var(--shadow-sm); }
+.faq summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; padding: 16px 18px 16px 20px; cursor: pointer; list-style: none; font-weight: 800; font-size: 1.0625rem; line-height: 1.35; border-radius: var(--r-lg); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq__toggle { display: grid; place-items: center; flex: none; width: 36px; height: 36px; border-radius: 50%; background: var(--blush); color: var(--red); transition: transform .25s ease, background-color .25s ease, color .25s ease; }
+.faq__toggle .icon { width: 18px; height: 18px; stroke-width: 2.4; }
+.faq details[open] .faq__toggle { transform: rotate(45deg); background: var(--red); color: var(--white); }
+.faq__answer { padding: 0 20px 22px; color: var(--muted); line-height: 1.65; }
+.faq__answer .faq__actions { display: flex; flex-direction: column; align-items: stretch; gap: 4px; margin-top: 18px; }
+.faq__answer .copy-link { justify-content: center; }
+@media (min-width: 700px) { .faq summary { padding: 20px 24px 20px 28px; font-size: 1.1875rem; } .faq__answer { padding: 0 28px 28px; font-size: 1.0625rem; } .faq__answer .faq__actions { flex-direction: row; align-items: center; gap: 16px; } }
+
+/* ---------- Финальный CTA ---------- */
+.final-wrap { padding-bottom: var(--section); }
+.final { position: relative; overflow: hidden; isolation: isolate; padding: 48px 22px; text-align: center; color: var(--white); background: linear-gradient(140deg, #D61538 0%, var(--red) 40%, #9E0C24 100%); border-radius: var(--r-xl); box-shadow: 0 40px 70px -40px rgba(200, 16, 46, .8); }
+.final::before, .final::after { content: ""; position: absolute; z-index: -1; border-radius: 50%; border: 48px solid rgba(255, 255, 255, .07); }
+.final::before { width: 340px; height: 340px; left: -150px; top: -150px; }
+.final::after { width: 440px; height: 440px; right: -190px; bottom: -230px; }
+.final h2 { font-size: clamp(1.625rem, 1rem + 3vw, 3rem); max-width: 16em; margin-inline: auto; }
+.final p { margin-top: 16px; font-size: clamp(1rem, .95rem + .4vw, 1.1875rem); font-weight: 600; color: rgba(255, 255, 255, .92); }
+.final .btn { margin-top: 28px; }
+.final__bug { width: 56px; height: 56px; margin: 0 auto 20px; filter: drop-shadow(0 8px 14px rgba(43, 29, 26, .3)); }
+@media (max-width: 559px) { .final .btn { width: 100%; } }
+@media (min-width: 700px) { .final { padding: 80px 48px; } }
+
+/* ---------- Футер ---------- */
+.footer { padding: 36px 0 88px; border-top: 1px solid var(--line); }
+.footer__row { display: grid; gap: 26px; }
+.footer__links { display: grid; gap: 4px; }
+.footer__links a { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; min-height: 48px; text-decoration: none; color: var(--muted); font-weight: 500; }
+.footer__links a b { color: var(--ink); font-weight: 800; text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
+.footer__links .icon { width: 20px; height: 20px; color: var(--red); }
+.footer__links a:hover b { color: var(--red); }
+.footer__small { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); }
+@media (min-width: 768px) { .footer { padding-bottom: 40px; } .footer__row { grid-template-columns: 1fr auto; align-items: center; } .footer__links { grid-auto-flow: column; gap: 32px; } }
+
+/* ---------- Плавающая кнопка (мобильные) ---------- */
+.sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(255, 248, 241, .92); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid var(--line); transform: translateY(110%); visibility: hidden; transition: transform .3s ease, visibility 0s linear .3s; }
+.sticky-cta.is-visible { transform: none; visibility: visible; transition: transform .3s ease, visibility 0s; }
+@media (min-width: 768px) { .sticky-cta { display: none; } }
+
+/* ---------- Анимации появления ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+  .js [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.2, .7, .2, 1), transform .7s cubic-bezier(.2, .7, .2, 1); transition-delay: var(--d, 0s); }
+  .js [data-reveal].is-in { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+
+<!-- Иконки (один линейный стиль) и значок-логотип -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="logo-bug" viewBox="0 0 48 48">
+    <path d="M19 8.500c-.8-3-2.800-4.800-5.800-5M29 8.500c.8-3 2.800-4.800 5.800-5" fill="none" stroke="#2B1D1A" stroke-width="2.400" stroke-linecap="round"/>
+    <circle cx="24" cy="13" r="8.500" fill="#2B1D1A"/>
+    <circle cx="20.800" cy="9.800" r="1.200" fill="#FFF8F1"/>
+    <circle cx="27.200" cy="9.800" r="1.200" fill="#FFF8F1"/>
+    <ellipse cx="24" cy="28.500" rx="17.500" ry="16.500" fill="#C8102E"/>
+    <path d="M24 12.500v32" fill="none" stroke="#2B1D1A" stroke-width="1.800" stroke-linecap="round"/>
+    <g fill="#FFF8F1">
+      <path transform="translate(14.500 24) scale(1.350)" d="M0 3.200C-4.500 0-4.200-3.200-2-3.200-.9-3.200 0-2.300 0-1.500 0-2.300.9-3.200 2-3.200 4.200-3.200 4.500 0 0 3.200z"/>
+      <path transform="translate(33.500 24) scale(1.350)" d="M0 3.200C-4.500 0-4.200-3.200-2-3.200-.9-3.200 0-2.300 0-1.500 0-2.300.9-3.200 2-3.200 4.200-3.200 4.500 0 0 3.200z"/>
+      <path transform="translate(16.500 35.500) scale(.95)" d="M0 3.200C-4.500 0-4.200-3.200-2-3.200-.9-3.200 0-2.300 0-1.500 0-2.300.9-3.200 2-3.200 4.200-3.200 4.500 0 0 3.200z"/>
+      <path transform="translate(31.500 35.500) scale(.95)" d="M0 3.200C-4.500 0-4.200-3.200-2-3.200-.9-3.200 0-2.300 0-1.500 0-2.300.9-3.200 2-3.200 4.200-3.200 4.500 0 0 3.200z"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11.200V16c0 1.300 2.700 3 6 3s6-1.700 6-3v-4.800"/><path d="M22 9v6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.500 2.600 3.800 5.600 3.800 9s-1.300 6.400-3.800 9c-2.500-2.600-3.800-5.600-3.800-9S9.500 5.600 12 3z"/></symbol>
+  <symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.500"/><circle cx="8.700" cy="10.800" r="2"/><path d="M5.700 16c.6-1.500 1.700-2.200 3-2.200s2.400.7 3 2.200"/><path d="M14.500 10h4M14.500 13.500h3"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.500"/><path d="M9 7V5.500A1.500 1.500 0 0 1 10.500 4h3A1.500 1.500 0 0 1 15 5.500V7"/><path d="M3 12.500h18"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2.500" y="6" width="13" height="12" rx="2.500"/><path d="M15.500 10.500l6-3v9l-6-3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2.500"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.500" r="3.200"/><path d="M2.500 19.500c.7-3.300 3.200-5 6.500-5s5.800 1.700 6.500 5"/><path d="M16 5.600a3.200 3.200 0 0 1 0 5.800M18.500 14.900c1.600.8 2.600 2.300 3 4.600"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="7" height="7" rx="1.800"/><rect x="13.500" y="3.500" width="7" height="7" rx="1.800"/><rect x="3.500" y="13.500" width="7" height="7" rx="1.800"/><rect x="13.500" y="13.500" width="7" height="7" rx="1.800"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M3.500 6.500L5 8l2.500-3M3.500 12.500L5 14l2.500-3M3.500 18.500L5 20l2.500-3M11 7h9.500M11 13h9.500M11 19h9.500"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4.500L16.500 4a2.100 2.100 0 0 1 3 3L8 18.500 4 20z"/><path d="M14.500 6l3 3"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.500C10.300 5 7.500 4.500 3.500 4.500v13c4 0 6.800.5 8.500 2 1.700-1.500 4.500-2 8.500-2v-13c-4 0-6.800.5-8.500 2z"/><path d="M12 6.500v13"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16a1.500 1.500 0 0 1 1.500 1.500v9A1.500 1.500 0 0 1 20 17h-7l-4.500 3.500V17H4a1.500 1.500 0 0 1-1.500-1.500v-9A1.500 1.500 0 0 1 4 5z"/><path d="M7.500 9.500h9M7.500 12.800h5.500"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.500 11.500a6.500 6.500 0 0 0 13 0M12 18v3M8.500 21h7"/></symbol>
+  <symbol id="i-timer" viewBox="0 0 24 24"><circle cx="12" cy="13.500" r="7.500"/><path d="M12 9.500v4l2.500 2M9.500 2.500h5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.200"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.500l5.500 3.500-5.500 3.500v-7z"/></symbol>
+  <symbol id="i-doc-check" viewBox="0 0 24 24"><path d="M6.500 3.500H14L19 8.500V19a1.500 1.500 0 0 1-1.500 1.500h-11A1.500 1.500 0 0 1 5 19V5a1.500 1.500 0 0 1 1.500-1.500z"/><path d="M14 3.500v5h5M8.700 14.300l2.200 2.200 4.300-4.400"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.500" y="10.500" width="15" height="10" rx="2.500"/><path d="M8 10.500V8a4 4 0 0 1 8 0v2.500M12 14.500v2"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.500"/><path d="M8.500 13.500L7 21l5-2.500 5 2.500-1.500-7.500"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 9.500L12 4l9 5.500M5 10.500V17M9.700 10.500V17M14.300 10.500V17M19 10.500V17M3 20.500h18"/></symbol>
+  <symbol id="i-level" viewBox="0 0 24 24"><path d="M5 20v-4M10 20v-8M15 20V8M20 20V4"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4L2.500 20h19L12 4z"/><path d="M12 10v4.500M12 17.200v.3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.500-3.200 8-8 9.500C7.200 20 4 16.500 4 12V6l8-3z"/><path d="M8.500 12l2.500 2.500 4.500-5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3.500L2.500 10.500l6.500 2.500 2.500 7 3-5 5 3.500 1.500-15z"/><path d="M9 13l12-9.500"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.500" r="4"/><path d="M4 20.500c.8-4 3.800-6 8-6s7.200 2 8 6"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.500" y="8.500" width="12" height="12" rx="2.500"/><path d="M15.500 8.500V6A2.500 2.500 0 0 0 13 3.500H6A2.500 2.500 0 0 0 3.500 6v7A2.500 2.500 0 0 0 6 15.500h2.500"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.500" y="5" width="19" height="14" rx="2.500"/><path d="M2.500 10h19M6.500 15h4"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.500M12 7.500v.3"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4 17v-4.500C4 8.900 5.800 6.500 9.500 6v2.300c-1.700.5-2.500 1.600-2.600 3.200h2.600V17H4zm10 0v-4.500c0-3.600 1.800-6 5.500-6.500v2.300c-1.700.5-2.500 1.600-2.600 3.200h2.600V17H14z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2.800l2.800 5.800 6.400.9-4.600 4.500 1.100 6.300-5.700-3-5.700 3 1.100-6.300L2.800 9.500l6.400-.9L12 2.800z"/></symbol>
+</svg>
+
+<!-- 2.1 Шапка -->
+<header class="header" id="top">
+  <div class="container header__row">
+    <a class="logo" href="#top" aria-label="English with Liia&nbsp;— наверх">
+      <svg aria-hidden="true"><use href="#logo-bug"/></svg>
+      <span>English <b>with</b> Liia</span>
+    </a>
+    <div class="header__right">
+      <nav class="nav" aria-label="Разделы страницы">
+        <a href="#program">Программа</a>
+        <a href="#price">Цена</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" data-link="enroll" href="https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link" target="_blank" rel="noopener">Записаться</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 2.2 Первый экран -->
+<section class="hero" id="hero">
+  <div class="container hero__grid">
+    <div class="hero__media">
+      <div class="hero__frame">
+        <img src="assets/hero.jpg" width="587" height="882" alt="Лия, преподаватель курса подготовки к IELTS" fetchpriority="high" decoding="async">
+      </div>
+      <svg class="hero__bug" aria-hidden="true"><use href="#logo-bug"/></svg>
+      <p class="hero__chip"><strong>8.0</strong><span>мой личный<br>балл IELTS</span></p>
+    </div>
+
+    <div class="hero__content">
+      <h1>Интенсивная подготовка к&nbsp;<span class="accent">IELTS</span> за&nbsp;1&nbsp;месяц</h1>
+      <p class="lead">Интенсивная месячная программа, которая охватывает все части IELTS Academic и&nbsp;готовит вас уверенно сдать экзамен.</p>
+      <ul class="badges" aria-label="Коротко о курсе">
+        <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span data-text="dates">1 ноября&nbsp;— 1 декабря</span></li>
+        <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg>Онлайн в Zoom</li>
+        <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-level"/></svg>Для уровня B1 и выше</li>
+        <li class="badge"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg>Группа до 8 человек</li>
+      </ul>
+      <div class="hero__actions">
+        <a class="btn btn--primary" data-link="enroll" href="https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link" target="_blank" rel="noopener">Записаться на курс</a>
+        <a class="btn btn--outline" data-link="assess" href="https://t.me/trinit_02?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83%20%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%BC%20IELTS." target="_blank" rel="noopener">Бесплатная диагностика уровня</a>
+      </div>
+      <p class="urgency"><span class="pulse" aria-hidden="true"></span><span><span data-early-only>Скидка 30% до&nbsp;20&nbsp;октября · </span><span data-text="seats">Осталось всего 3 места</span></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- 2.3 Зачем нужен IELTS -->
+<section class="section section--blush" id="why">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 class="h2">Зачем сдавать IELTS</h2>
+    </div>
+    <ul class="why-grid">
+      <li class="why-card" data-reveal>
+        <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+        <h3>Учёба за&nbsp;границей</h3>
+      </li>
+      <li class="why-card" data-reveal style="--d:.06s">
+        <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <h3>Интеграция в&nbsp;новой стране</h3>
+      </li>
+      <li class="why-card" data-reveal style="--d:.12s">
+        <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-id"/></svg></span>
+        <h3>Вид на&nbsp;жительство</h3>
+      </li>
+      <li class="why-card" data-reveal style="--d:.18s">
+        <span class="why-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
+        <h3>Работа за&nbsp;рубежом</h3>
+      </li>
+    </ul>
+    <p class="small why-note" data-reveal>Курс готовит к&nbsp;формату IELTS Academic.</p>
+  </div>
+</section>
+
+<!-- 2.4 Что входит в курс -->
+<section class="section" id="program">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 class="h2">Что входит в&nbsp;курс</h2>
+    </div>
+    <ul class="features">
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>Живые занятия в&nbsp;Zoom 4&nbsp;раза в&nbsp;неделю по&nbsp;1&nbsp;часу</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span><span>Длительность курса&nbsp;— 1&nbsp;месяц (<span data-text="dates">1 ноября&nbsp;— 1 декабря</span>)</span></li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><span>Маленькая группа: <span class="nowrap">7–8&nbsp;человек</span></span></li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg></span>Подробная подготовка ко&nbsp;всем четырём частям IELTS: Listening, Reading, Writing, Speaking</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></span>Разбор и&nbsp;практика всех типов заданий, которые встречаются на&nbsp;экзамене</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-pen"/></svg></span>Углублённая подготовка ко&nbsp;всем типам заданий Writing и&nbsp;практика написания эссе</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span>Ключевая лексика для IELTS Writing</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>Темы и&nbsp;лексика для IELTS Speaking</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg></span>Speaking Club раз в&nbsp;неделю&nbsp;— одно из&nbsp;четырёх занятий, полностью посвящено IELTS Speaking</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-timer"/></svg></span>5&nbsp;полных пробных экзаменов: 4&nbsp;еженедельных и&nbsp;1&nbsp;финальный в&nbsp;формате реального IELTS, на&nbsp;время</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg></span>После финального экзамена&nbsp;— честная оценка вашей готовности к&nbsp;реальному IELTS</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span>Все занятия записываются&nbsp;— их&nbsp;можно пересмотреть в&nbsp;любой момент</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-doc-check"/></svg></span>Много домашних заданий каждый день&nbsp;— их&nbsp;лично проверяет преподаватель</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></span>Закрытый чат группы</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>Два преподавателя с&nbsp;IELTS&nbsp;8.0</li>
+      <li class="feature" data-reveal><span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></span>Базовая помощь с&nbsp;поступлением в&nbsp;университет (входит в&nbsp;стоимость)</li>
+    </ul>
+
+    <div class="notice" data-reveal>
+      <span class="notice__icon"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg></span>
+      <p><strong>Это интенсив.</strong> Курс подойдёт тем, кто готов заниматься регулярно, приходить на&nbsp;занятия и&nbsp;выполнять все задания. Совмещать с&nbsp;работой или учёбой можно, но&nbsp;будет непросто.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2.5 Результат и гарантия -->
+<section class="section section--blush" id="result">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 class="h2">Результат курса</h2>
+      <p class="lead result-goal">Цель курса&nbsp;— подготовить вас к&nbsp;сдаче IELTS Academic на&nbsp;<b>6.5</b> сразу после окончания программы.</p>
+    </div>
+
+    <div class="guarantee" data-reveal>
+      <div class="guarantee__main on-red">
+        <span class="guarantee__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <h3>Гарантия результата</h3>
+        <p>Цель курса&nbsp;— IELTS&nbsp;6.5. Гарантируем <b>не&nbsp;ниже&nbsp;6.0</b>: если вы получите 5.5 или ниже, <b>вернём 50%</b> стоимости курса.</p>
+      </div>
+      <div class="guarantee__terms">
+        <h4>Условия:</h4>
+        <ul class="checklist">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>уровень на&nbsp;старте&nbsp;— B1 или выше (подтверждается диагностикой перед началом курса);</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>вы присутствовали онлайн на&nbsp;всех занятиях курса (посещаемость отмечается, просмотр записей не&nbsp;засчитывается);</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>вы сдали все домашние задания, и&nbsp;их&nbsp;проверил преподаватель (задания не&nbsp;обязаны быть идеальными, но&nbsp;должны быть выполнены);</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>вы сдали официальный IELTS Academic не&nbsp;позднее 1&nbsp;февраля 2027&nbsp;года;</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span>вы прислали официальный результат (TRF) в&nbsp;течение 14&nbsp;дней после его получения.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="admission" data-reveal>
+      <div class="admission__text">
+        <h3 class="h3">Помощь с&nbsp;поступлением</h3>
+        <p>После курса я&nbsp;помогаю с&nbsp;поступлением&nbsp;— это базовая поддержка, которая входит в&nbsp;стоимость:</p>
+      </div>
+      <ul class="admission__list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>выбрать университет;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>узнать точные требования для поступления;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>подготовить письмо, которое нужно отправить;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>записаться на&nbsp;экзамен IELTS;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>разобраться, какие документы нужны.</li>
+      </ul>
+      <p class="small admission__note">Это базовая поддержка, а&nbsp;не&nbsp;полное сопровождение всего процесса поступления.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2.6 Цена -->
+<section class="section pricing" id="price">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <h2 class="h2">Стоимость курса</h2>
+    </div>
+
+    <div class="price-card" data-reveal>
+      <p class="price-card__old" data-early-only><span class="visually-hidden">Обычная цена: </span><span data-text="priceFull">$100</span></p>
+      <div class="price-card__row">
+        <p class="price-card__now" data-text="priceCurrent">$70</p>
+        <span class="price-card__badge" data-early-only data-text="discount">−30%</span>
+      </div>
+      <p class="price-card__text" data-early-only>Скидка 30% действует, если вы внесёте предоплату до&nbsp;20&nbsp;октября включительно.</p>
+      <div class="timer" data-early-only role="timer" aria-label="До конца скидки">
+        <span class="timer__label">До конца скидки:</span>
+        <span class="timer__value" data-countdown>— дн. --:--:--</span>
+      </div>
+      <p class="seats"><span class="pulse" aria-hidden="true"></span><span data-text="seats">Осталось всего 3 места</span></p>
+      <a class="btn btn--primary btn--block" data-link="enroll" href="https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link" target="_blank" rel="noopener">Записаться на курс</a>
+      <ul class="price-card__notes">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Для старта нужна предоплата <span data-text="deposit">30%</span>. Предоплата не&nbsp;возвращается.</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg><span>Оплата&nbsp;— банковским переводом; детали обсуждаем в&nbsp;Telegram после записи.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 2.7 Как проходит запись -->
+<section class="section section--blush" id="enroll">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 class="h2">Как записаться</h2>
+    </div>
+    <ol class="steps">
+      <li class="step" data-reveal>
+        <span class="step__num" aria-hidden="true">1</span>
+        <div><h3>Заполните анкету</h3><p>Это займёт пару минут.</p></div>
+      </li>
+      <li class="step" data-reveal style="--d:.08s">
+        <span class="step__num" aria-hidden="true">2</span>
+        <div><h3>Я напишу вам в&nbsp;Telegram</h3><p>Отвечаю в&nbsp;течение 24&nbsp;часов, обсудим детали и&nbsp;оплату.</p></div>
+      </li>
+      <li class="step" data-reveal style="--d:.16s">
+        <span class="step__num" aria-hidden="true">3</span>
+        <div><h3>Вы попадаете в&nbsp;чат группы</h3><p>Знакомитесь с&nbsp;преподавателями и&nbsp;группой, узнаёте программу и&nbsp;вместе выбираем дни и&nbsp;время занятий.</p></div>
+      </li>
+    </ol>
+    <div class="steps-cta" data-reveal>
+      <a class="btn btn--primary" data-link="enroll" href="https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link" target="_blank" rel="noopener">Записаться на курс</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2.8 Бесплатная диагностика уровня -->
+<section class="section" id="assessment">
+  <div class="container">
+    <div class="assess on-dark" data-reveal>
+      <div class="assess__text">
+        <h2 class="h2">Не уверены в&nbsp;своём уровне?</h2>
+        <p>Не знаете свой текущий уровень английского или сомневаетесь, готовы&nbsp;ли начинать подготовку к&nbsp;IELTS? Пройдите бесплатную диагностику&nbsp;— она покажет, достаточно&nbsp;ли вашего уровня для старта курса.</p>
+        <div class="assess__actions">
+          <a class="btn btn--cream" data-link="assess" href="https://t.me/trinit_02?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83%20%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%BC%20IELTS." target="_blank" rel="noopener">Бесплатная диагностика уровня</a>
+          <button class="copy-link" type="button" data-copy><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-copy-label aria-live="polite">Скопировать сообщение</span></button>
+        </div>
+      </div>
+      <div class="assess__levels" aria-hidden="true">
+        <span>A1</span><span>A2</span><span class="is-on">B1</span><span class="is-on">B2</span><span class="is-on">C1</span><span>C2</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2.9 Обо мне -->
+<section class="section" id="about" style="padding-top:0">
+  <div class="container about">
+    <div class="about__media" data-reveal>
+      <figure class="about__photo">
+        <img src="assets/about-1.jpg" width="587" height="868" alt="Лия&nbsp;— студийный портрет" loading="lazy" decoding="async">
+      </figure>
+      <!-- Галерея: фото появляется само, как только файл положен в assets/ (about-2.jpg, about-3.jpg, about-work.jpg). Нет файла, нет ячейки. -->
+      <div class="gallery" data-gallery hidden>
+        <figure hidden><img data-src="assets/about-2.jpg" alt="Лия в красной кофте" decoding="async"></figure>
+        <figure hidden><img data-src="assets/about-3.jpg" alt="Лия в пустыне" decoding="async"></figure>
+        <figure hidden><img data-src="assets/about-work.jpg" alt="Лия за работой" decoding="async"></figure>
+      </div>
+    </div>
+
+    <div class="about__content">
+      <div data-reveal>
+        <h2 class="h2">Обо мне</h2>
+        <p class="lead about__intro">Меня зовут Лия. Я&nbsp;готовлю студентов к&nbsp;экзаменам по&nbsp;английскому больше 4&nbsp;лет.</p>
+      </div>
+      <ul class="facts">
+        <li class="fact" data-reveal><strong>4+ года</strong><span>преподаю и&nbsp;готовлю к&nbsp;экзаменам</span></li>
+        <li class="fact" data-reveal style="--d:.06s"><strong>6.5</strong><span>минимальный балл IELTS у&nbsp;моих студентов</span></li>
+        <li class="fact" data-reveal style="--d:.12s"><strong>8.0</strong><span>мой личный балл IELTS</span></li>
+        <li class="fact" data-reveal style="--d:.18s"><strong class="is-word">KU Leuven</strong><span>учусь в&nbsp;одном из&nbsp;топ-50 университетов мира (Times Higher Education 2026)</span></li>
+      </ul>
+      <div class="teacher" data-reveal>
+        <span class="teacher__avatar"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span>
+        <div>
+          <h3 class="h3">Второй преподаватель</h3>
+          <p>Вместе со&nbsp;мной группу будет вести второй преподаватель с&nbsp;личным баллом IELTS&nbsp;8.0 и&nbsp;опытом преподавания более 5&nbsp;лет.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2.10 Результаты студентов -->
+<section class="section section--blush" id="reviews">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <h2 class="h2">Результаты моих студентов</h2>
+      <p class="small">Отзывы студентов с&nbsp;индивидуальных занятий. Публикуются с&nbsp;их&nbsp;согласия.</p>
+    </div>
+
+    <div class="reviews" data-carousel tabindex="0" role="group" aria-label="Отзывы студентов">
+      <article class="review">
+        <header class="review__head">
+          <span class="avatar" aria-hidden="true">М</span>
+          <div>
+            <p class="review__name">М.</p>
+            <div class="stars" role="img" aria-label="Оценка: 5 из 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          </div>
+          <p class="review__overall"><span>Overall</span><strong>7.5</strong></p>
+        </header>
+        <ul class="chips"><li>Listening <b>8</b></li><li>Reading <b>7.5</b></li><li>Writing <b>7</b></li><li>Speaking <b>7</b></li></ul>
+        <blockquote><svg aria-hidden="true"><use href="#i-quote"/></svg><p>«Была цель достичь B2 на&nbsp;IELTS, получила в&nbsp;итоге C1. Отличный преподаватель, понимающий и&nbsp;с&nbsp;высоким уровнем языка. Я&nbsp;переборчивая на&nbsp;учителей, но&nbsp;тут однозначно пять звёзд. Спасибо за&nbsp;подготовку и&nbsp;все усилия, очень помогла!»</p></blockquote>
+      </article>
+
+      <article class="review">
+        <header class="review__head">
+          <span class="avatar" aria-hidden="true">Н</span>
+          <div>
+            <p class="review__name">Н.</p>
+            <div class="stars" role="img" aria-label="Оценка: 5 из 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          </div>
+          <p class="review__overall"><span>Overall</span><strong>7.5</strong></p>
+        </header>
+        <ul class="chips"><li>Listening <b>7.5</b></li><li>Reading <b>8</b></li><li>Writing <b>7</b></li><li>Speaking <b>8</b></li></ul>
+        <blockquote><svg aria-hidden="true"><use href="#i-quote"/></svg><p>«Лия, спасибо огромное. Результаты я&nbsp;даже не&nbsp;ожидал))»</p></blockquote>
+      </article>
+
+      <article class="review">
+        <header class="review__head">
+          <span class="avatar" aria-hidden="true">С</span>
+          <div>
+            <p class="review__name">С.</p>
+            <div class="stars" role="img" aria-label="Оценка: 5 из 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          </div>
+          <p class="review__overall"><span>Overall</span><strong>6.5</strong></p>
+        </header>
+        <ul class="chips"><li>Listening <b>6</b></li><li>Reading <b>7</b></li><li>Writing <b>6</b></li><li>Speaking <b>6.5</b></li></ul>
+        <blockquote><svg aria-hidden="true"><use href="#i-quote"/></svg><p>«Мне нужно было получить минимум 5.0 по&nbsp;каждому навыку и&nbsp;средний балл 6.0&nbsp;— цель была достигнута. Больше всего трудностей вызывал Speaking: Лия регулярно уделяла ему часть урока, и&nbsp;это помогло улучшить уверенность и&nbsp;структуру ответов. Атмосфера на&nbsp;уроках была спокойной и&nbsp;доброжелательной. Сотрудничество с&nbsp;Лией помогло мне системно подготовиться к&nbsp;экзамену и&nbsp;добиться нужных результатов.»</p></blockquote>
+      </article>
+
+      <article class="review">
+        <header class="review__head">
+          <span class="avatar" aria-hidden="true">И</span>
+          <div>
+            <p class="review__name">И.</p>
+            <div class="stars" role="img" aria-label="Оценка: 5 из 5"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div>
+          </div>
+          <p class="review__overall"><span>Overall</span><strong>6.5</strong></p>
+        </header>
+        <ul class="chips"><li>Listening <b>6.5</b></li><li>Reading <b>6.5</b></li><li>Writing <b>6.5</b></li><li>Speaking <b>7</b></li></ul>
+        <blockquote><svg aria-hidden="true"><use href="#i-quote"/></svg><p>«Думал, будет хуже, но&nbsp;в&nbsp;целом очень даже круто, особенно для первого опыта.»</p></blockquote>
+      </article>
+    </div>
+    <div class="dots" data-dots aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- 2.11 Telegram-канал -->
+<section class="section" id="channel">
+  <div class="container channel">
+    <div class="channel__text" data-reveal>
+      <h2 class="h2">Бесплатные материалы в&nbsp;Telegram</h2>
+      <p class="lead">В&nbsp;моём Telegram-канале:</p>
+      <a class="btn btn--primary" data-link="channel" href="https://t.me/englishwithliia" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>Telegram-канал</a>
+    </div>
+    <div class="channel__card" data-reveal style="--d:.1s">
+      <p class="channel__handle"><svg aria-hidden="true"><use href="#logo-bug"/></svg><span>English with Liia<small data-text="channelShort">t.me/englishwithliia</small></span></p>
+      <ul class="channel__list">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>бесплатные материалы по&nbsp;английскому;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>советы по&nbsp;IELTS;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-doc-check"/></svg>упражнения в&nbsp;формате IELTS;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>полезная лексика;</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-target"/></svg>рекомендации по&nbsp;подготовке.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 2.12 FAQ -->
+<section class="section section--blush" id="faq">
+  <div class="container">
+    <div class="section-head section-head--center" data-reveal>
+      <h2 class="h2">Частые вопросы</h2>
+    </div>
+    <div class="faq" data-reveal>
+      <details>
+        <summary>Можно&nbsp;ли совмещать курс с&nbsp;работой или учёбой? Я&nbsp;успею?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__answer"><p>Да, совмещать можно, но&nbsp;будет непросто: курс очень интенсивный.</p></div>
+      </details>
+      <details>
+        <summary>Что происходит после оплаты?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__answer"><p>Вы попадаете в&nbsp;чат группы, знакомитесь с&nbsp;преподавателями и&nbsp;другими участниками. Вместе выбираем дни и&nbsp;время занятий. Рассказываем, что и&nbsp;когда будет происходить, включая то, какие части экзамена разбираем в&nbsp;какой день.</p></div>
+      </details>
+      <details>
+        <summary>Можно&nbsp;ли получить 6.5 за&nbsp;месяц, если сейчас у&nbsp;меня&nbsp;B1?<span class="faq__toggle" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+        <div class="faq__answer">
+          <p>Результат зависит от&nbsp;вашего стартового уровня, но&nbsp;интенсивная работа значительно ускоряет прогресс. Чтобы понять, насколько реальна ваша цель, пройдите бесплатную диагностику уровня.</p>
+          <div class="faq__actions">
+            <a class="btn btn--outline" data-link="assess" href="https://t.me/trinit_02?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D1%83%20%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%BA%D1%83%D1%80%D1%81%D0%BE%D0%BC%20IELTS." target="_blank" rel="noopener">Бесплатная диагностика уровня</a>
+            <button class="copy-link" type="button" data-copy><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-copy-label aria-live="polite">Скопировать сообщение</span></button>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 2.13 Финальный CTA -->
+<section class="section final-wrap" id="start">
+  <div class="container">
+    <div class="final on-red" data-reveal>
+      <svg class="final__bug" aria-hidden="true"><use href="#logo-bug"/></svg>
+      <h2><span class="phrase">Старт 1&nbsp;ноября.</span> <span class="phrase">Мест в&nbsp;группе&nbsp;— до&nbsp;8.</span></h2>
+      <p data-early-only>Скидка 30% действует до&nbsp;20&nbsp;октября включительно.</p>
+      <a class="btn btn--white" data-link="enroll" href="https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link" target="_blank" rel="noopener">Записаться на курс</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 2.14 Футер -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__row">
+      <a class="logo" href="#top" aria-label="English with Liia&nbsp;— наверх">
+        <svg aria-hidden="true"><use href="#logo-bug"/></svg>
+        <span>English <b>with</b> Liia</span>
+      </a>
+      <div class="footer__links">
+        <a data-link="personal" href="https://t.me/trinit_02" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>Связаться со мной: <b>Telegram <span data-text="tgHandle">@trinit_02</span></b></a>
+        <a data-link="channel" href="https://t.me/englishwithliia" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Telegram-канал: <b data-text="channelShort">t.me/englishwithliia</b></a>
+      </div>
+    </div>
+    <p class="small footer__small">Отвечаю в&nbsp;течение 24&nbsp;часов. · © 2026 English with Liia</p>
+  </div>
+</footer>
+
+<!-- Плавающая кнопка на мобильных: появляется после первого экрана, прячется у футера -->
+<div class="sticky-cta" data-sticky>
+  <a class="btn btn--primary btn--block" data-link="enroll" href="https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link" target="_blank" rel="noopener">Записаться на курс</a>
+</div>
+
+<script>
+/* ============================================================
+   НАСТРОЙКИ — всё, что можно менять без поиска по коду
+   ============================================================ */
+const CONFIG = {
+  priceFull: 100,                                  // $
+  priceEarly: 70,                                  // $ (−30%)
+  depositPercent: 30,
+  earlyDeadline: "2026-10-20T23:59:59+02:00",     // конец 20 октября, Европа/Брюссель
+  seatsLeftText: "Осталось всего 3 места",
+  courseDates: "1 ноября — 1 декабря",
+  enrollUrl: "https://docs.google.com/forms/d/1tSZwj-hc-9ifvf6wKvlheLaNw-Sfzsto3zgIATsiQXc/viewform?usp=sf_link",
+  telegramPersonal: "trinit_02",
+  telegramChannelUrl: "https://t.me/englishwithliia",
+  assessmentMessage: "Здравствуйте! Хочу записаться на бесплатную диагностику уровня перед курсом IELTS."
+};
+
+(function () {
+  "use strict";
+  const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+  const pad = (n) => String(n).padStart(2, "0");
+
+  /* --- Ссылки трёх CTA --- */
+  const links = {
+    enroll: CONFIG.enrollUrl,
+    assess: "https://t.me/" + CONFIG.telegramPersonal + "?text=" + encodeURIComponent(CONFIG.assessmentMessage),
+    channel: CONFIG.telegramChannelUrl,
+    personal: "https://t.me/" + CONFIG.telegramPersonal
+  };
+  $$("[data-link]").forEach((a) => {
+    a.href = links[a.dataset.link];
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+
+  /* --- Цена: до дедлайна и после --- */
+  const deadline = new Date(CONFIG.earlyDeadline).getTime();
+  const isEarly = () => Date.now() < deadline;
+
+  const texts = {
+    priceFull: "$" + CONFIG.priceFull,
+    discount: "−" + Math.round((1 - CONFIG.priceEarly / CONFIG.priceFull) * 100) + "%",
+    deposit: CONFIG.depositPercent + "%",
+    seats: CONFIG.seatsLeftText,
+    dates: CONFIG.courseDates.replace(/ —/g, " —"),
+    tgHandle: "@" + CONFIG.telegramPersonal,
+    channelShort: CONFIG.telegramChannelUrl.replace(/^https?:\/\//, "")
+  };
+
+  function render(early) {
+    texts.priceCurrent = "$" + (early ? CONFIG.priceEarly : CONFIG.priceFull);
+    $$("[data-text]").forEach((el) => {
+      const value = texts[el.dataset.text];
+      if (value != null && el.textContent !== value) el.textContent = value;
+    });
+    $$("[data-early-only]").forEach((el) => { el.hidden = !early; });
+  }
+
+  const countdown = $$("[data-countdown]");
+  let timerId = null;
+  function tick() {
+    const left = deadline - Date.now();
+    if (left <= 0) {
+      render(false);
+      if (timerId) clearInterval(timerId);
+      return;
+    }
+    const s = Math.floor(left / 1000);
+    const value = Math.floor(s / 86400) + " дн. " + pad(Math.floor(s / 3600) % 24) + ":" + pad(Math.floor(s / 60) % 60) + ":" + pad(s % 60);
+    countdown.forEach((el) => { el.textContent = value; });
+  }
+
+  render(isEarly());
+  if (isEarly()) {
+    tick();
+    timerId = setInterval(tick, 1000);
+  }
+
+  /* --- «Скопировать сообщение» --- */
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text).then(() => true, () => legacyCopy(text));
+    }
+    return Promise.resolve(legacyCopy(text));
+  }
+  function legacyCopy(text) {
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.setAttribute("readonly", "");
+    area.style.cssText = "position:fixed;top:0;left:0;opacity:0;";
+    document.body.appendChild(area);
+    area.select();
+    area.setSelectionRange(0, text.length);
+    let ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    area.remove();
+    return ok;
+  }
+  $$("[data-copy]").forEach((btn) => {
+    const label = btn.querySelector("[data-copy-label]");
+    const initial = label.textContent;
+    let resetId = null;
+    btn.addEventListener("click", () => {
+      copyText(CONFIG.assessmentMessage).then((ok) => {
+        label.textContent = ok ? "Скопировано" : "Не удалось скопировать";
+        btn.classList.toggle("is-done", ok);
+        clearTimeout(resetId);
+        resetId = setTimeout(() => {
+          label.textContent = initial;
+          btn.classList.remove("is-done");
+        }, 2500);
+      });
+    });
+  });
+
+  /* --- Галерея «Обо мне»: показываем только те фото, файлы которых есть --- */
+  function loadGallery() {
+    $$("[data-gallery]").forEach((gallery) => {
+      $$("img[data-src]", gallery).forEach((img) => {
+        img.addEventListener("load", () => {
+          img.parentNode.hidden = false;
+          gallery.hidden = false;
+        });
+        img.src = img.dataset.src;
+        img.removeAttribute("data-src");
+      });
+    });
+  }
+  if (document.readyState === "complete") loadGallery();
+  else window.addEventListener("load", loadGallery);
+
+  /* --- Шапка: тень после прокрутки --- */
+  const header = document.querySelector(".header");
+  const onScroll = () => header.classList.toggle("is-stuck", window.scrollY > 8);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  const hasIO = "IntersectionObserver" in window;
+
+  /* --- Плавающая кнопка на мобильных --- */
+  const sticky = document.querySelector("[data-sticky]");
+  if (sticky && hasIO) {
+    const state = { hero: true, footer: false };
+    const update = () => sticky.classList.toggle("is-visible", !state.hero && !state.footer);
+    new IntersectionObserver((entries) => { state.hero = entries[0].isIntersecting; update(); })
+      .observe(document.getElementById("hero"));
+    new IntersectionObserver((entries) => { state.footer = entries[0].isIntersecting; update(); })
+      .observe(document.getElementById("footer"));
+  }
+
+  /* --- Появление блоков при прокрутке --- */
+  const revealEls = $$("[data-reveal]");
+  if (hasIO && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-in"));
+  }
+
+  /* --- Карусель отзывов: точки --- */
+  $$("[data-carousel]").forEach((track) => {
+    const dotsBox = track.parentNode.querySelector("[data-dots]");
+    const slides = $$(".review", track);
+    if (!dotsBox || !slides.length) return;
+    const dots = slides.map((slide) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.tabIndex = -1;
+      dot.addEventListener("click", () => {
+        track.scrollTo({ left: slide.offsetLeft - track.offsetLeft - parseFloat(getComputedStyle(track).paddingLeft), behavior: "smooth" });
+      });
+      dotsBox.appendChild(dot);
+      return dot;
+    });
+    const setActive = () => {
+      const max = track.scrollWidth - track.clientWidth;
+      const index = max <= 0 ? 0 : Math.round((track.scrollLeft / max) * (slides.length - 1));
+      dots.forEach((dot, i) => dot.setAttribute("aria-current", i === index ? "true" : "false"));
+    };
+    track.addEventListener("scroll", setActive, { passive: true });
+    setActive();
+  });
+})();
+</script>
+</body>
+</html>
